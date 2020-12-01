@@ -25,6 +25,7 @@ def plot(d, t="default"):
 
     title = "Probability distribution of {0} shots".format(shots)
     title = title + "\n" + t
+    matplotlib.pyplot.figure()
     matplotlib.pyplot.plot(decimals, probabilities)
     matplotlib.pyplot.xticks(decimals, binaries, rotation='vertical', fontsize=1.5)
     matplotlib.pyplot.title(title)
