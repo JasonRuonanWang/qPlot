@@ -1,7 +1,7 @@
 import matplotlib
 
 
-def plot(d, t=""):
+def plot(d, t="default"):
     l = 0
     for p in d:
         l = len(p)
@@ -28,7 +28,7 @@ def plot(d, t=""):
     matplotlib.pyplot.plot(decimals, probabilities)
     matplotlib.pyplot.xticks(decimals, binaries, rotation='vertical', fontsize=1.5)
     matplotlib.pyplot.title(title)
-    matplotlib.pyplot.savefig("distribution.eps")
+    matplotlib.pyplot.savefig("{0}.eps".format(t))
 
 
 
