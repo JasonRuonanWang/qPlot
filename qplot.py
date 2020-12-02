@@ -30,6 +30,7 @@ def plot(d, t="default"):
     matplotlib.pyplot.xticks(decimals, binaries, rotation='vertical', fontsize=1.5)
     matplotlib.pyplot.title(title)
     matplotlib.pyplot.savefig("{0}.pdf".format(t))
+    matplotlib.pyplot.close()
 
 
 
